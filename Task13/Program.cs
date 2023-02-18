@@ -6,6 +6,7 @@
 // 32679 -> 6
 
 Console.Clear();
+
 int Promt(string msg)
 {
     System.Console.WriteLine($"{msg}");
@@ -13,3 +14,29 @@ int Promt(string msg)
 }
 
 int num = Promt(" Введите число >");
+bool Validate(int numb)
+{
+    if (numb > 99)
+    {
+        return true;
+    }
+
+    Console.WriteLine("третьей цифры в числе нет");
+    return false;
+}
+
+
+if (Validate(num))
+{
+
+    while (num > 1000)
+    {
+        num = num / 10;
+    }
+
+    num = num % 10;
+    System.Console.WriteLine($"третья цифра числа равна {num}");
+}
+
+
+
